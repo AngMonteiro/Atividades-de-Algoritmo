@@ -1,0 +1,12 @@
+algoritmo "semnome"
+
+var
+n,n1,i:inteiro
+inicio
+      escreval("Digite quantos numeros deseja somar: ")
+      leia (i)
+      para n <- 1 ate i faca
+           n1 <- n1 + n
+           escreval("Sua soma e: ", n1)
+      fimpara
+fimalgoritmo
