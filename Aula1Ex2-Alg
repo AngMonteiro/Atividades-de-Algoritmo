@@ -1,0 +1,33 @@
+algoritmo "semnome"
+
+var
+   opc: literal
+   n1,n2: inteiro
+   result: inteiro
+inicio
+      escreval("Qual opeção você quer executar:(A=adição,S=subtração,M=multiplicação,D=divisão.)")
+      leia (opc)
+      escreval("Digite o primeiro número:")
+      leia (n1)
+      escreval("Digite o segundo número:")
+      leia (n2)
+      escolha(opc)
+             caso("A")
+             result <- n1+n2
+             escreva("O seu resultado é: ",result)
+             
+             caso("S")
+             result <- n1-n2
+             escreva("O seu resultado é: ",result)
+             
+             caso("M")
+             result <- n1*n2
+             escreva("O seu resultado é: ",result)
+             
+             caso("D")
+             result <- n1/n2
+             escreva("O seu resultado é: ",result)
+             
+             fimescolha
+             
+fimalgoritmo
