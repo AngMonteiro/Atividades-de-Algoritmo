@@ -1,24 +1,24 @@
-// Faça um programa que calcule e
-//mostre a área de um trapézio.
-//Sabe-se que a fórmula para calcular a área do trapézio é:
-//Area = ((base maior + base menor) * altura)/2
+algoritmo "semnome"
 
-////////////////////////////////////////////
-
-algoritmo "Calculo área trapézio"
 var
-   base_menor, base_maior, altura, area:real
-
+   tc: literal
+   ct: inteiro
+   valor: real
+   cheio: real
 inicio
-   escreva("Digite o Valor da base menor: ")
-   leia(base_menor)
-   escreva("Digite o Valor da base maior: ")
-   leia(base_maior)
-   escreva("Digite o Valor da altura: ")
-   leia(altura)
+      escreval("Digite o tipo do seu carro(G = gasolina ou A = álcool):")
+      leia(tc)
+      escreval("Digite a capacidade em litros do seu tanque:")
+      leia(ct)
+      se(tc = "G")entao
+            escreval("Seu carro é tipo Gasolina.Digite quanto está o preço da Gasolina em litros:")
+            leia(valor)
+      senao
+            escreval("Seu carro é tipo Álcool.Digite quanto está o preço do Álcool em litros:")
+            leia(valor)
+      fimse
+      cheio <- ct*valor
+      escreva("O preço para se encher o tanque de compustivel é:", cheio," reais")
 
-   area <- ((base_maior + base_menor) * altura)/2
-   
-   escreval("A área é: ", area)
-
+      
 fimalgoritmo
