@@ -1,0 +1,28 @@
+algoritmo "semnome"
+
+var
+   n: inteiro
+   i:inteiro
+   n1:inteiro
+   menor,maior:inteiro
+inicio
+      escreval("Digite quantos numeros deseja informar: ")
+      leia (n)
+      para i <- 1 ate n faca
+           escreval("Digite um numero: ")
+           leia (n1)
+      se(i=1)entao
+                  maior <- n1
+                  menor <- n1
+           senao
+             se(n1 > maior) entao
+                maior <- n1
+           fimse
+           se(n1 < menor) entao
+               menor <- n1
+           fimse
+      fimse
+      fimpara
+             escreval("O maior número digitado foi: ", maior)
+             escreval("O menor número digitado foi: ", menor)
+fimalgoritmo
