@@ -1,0 +1,15 @@
+algoritmo "semnome"
+
+var
+   iPara, iEnquanto: inteiro
+inicio
+      para iPara <- 1 ate 10 faca
+           escreval("Valor de i:", iPara)
+      fimpara
+      
+      escreval
+      enquanto iEnquanto <10 faca
+               escreval("Valor de i:", iEnquanto)
+               iEnquanto <- iEnquanto + 1
+      fimenquanto
+fimalgoritmo
