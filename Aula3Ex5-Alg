@@ -1,0 +1,24 @@
+algoritmo "semnome"
+
+var
+n:inteiro
+r:caracter
+inicio
+      enquanto r <> "N" faca
+      escreval("Digite um número:")
+      leia(n)
+se n > 0 entao
+   escreval("Número positivo")
+senao
+     se n < 0 entao
+         escreval("Número negativo")
+     senao
+          escreval("Número zero")
+     fimse
+fimse
+   escreval("Deseja informar mais um número?")
+   escreval("S-Sim ou N-Não")
+   leia(r)
+   limpatela
+fimenquanto
+fimalgoritmo
