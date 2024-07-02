@@ -1,0 +1,10 @@
+algoritmo "semnome"
+
+var
+   n,i:inteiro
+inicio
+      para i <- 2 ate 999 passo 2 faca
+           n<- n + i
+           escreval(n)
+      fimpara
+fimalgoritmo
