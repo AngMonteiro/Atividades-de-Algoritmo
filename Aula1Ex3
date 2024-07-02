@@ -1,0 +1,37 @@
+algoritmo "semnome"
+
+var
+code: inteiro
+salario: real
+aumento:real
+inicio
+      escreval("Digite o código do seu cargo:")
+      escreval("1=Escriturário,2=Secretário,3=Caixa,4=Gerente,5=Diretor")
+      leia(code)
+      escreval("Digite seu sálario:")
+      leia(salario)
+      
+      escolha(code)
+      caso (1)
+                   aumento <- salario + (salario * 0.50)
+                   escreva("Seu cargo é Escriturário, seu salário atual é: ",salario," e seu aumento é: ",aumento)
+      caso (2)
+                   aumento <- salario + (salario * 0.35)
+                   escreva("Seu cargo é Secretário, seu salário atual é: ",salario," e seu aumento é: ",aumento)
+      caso (3)
+                   aumento <- salario + (salario * 0.20)
+                   escreva("Seu cargo é Caixa, seu salário atual é: ",salario," e seu aumento é: ",aumento)
+      caso (4)
+                   aumento <- salario + (salario * 0.10)
+                   escreva("Seu cargo é Gerente, seu salário atual é: ",salario," e seu aumento é: ",aumento)
+      caso (5)
+                   aumento <- salario
+                   escreva("Seu cargo é Diretor, seu salário atual é: ",salario," e seu aumento é: ",aumento)
+                   
+      outrocaso
+                   escreva("Código inválido")
+                   fimescolha
+                   
+
+
+fimalgoritmo
