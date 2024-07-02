@@ -1,0 +1,49 @@
+algoritmo "semnome"
+
+var
+   canal,contador:real
+   canal9, canal12, canal23, canal40, outros:real
+inicio
+      canal <- 1
+      enquanto canal <> 0 faca
+               escreval("Canais: 9,12,23 ou 40?")
+               escreval("Digite 0 para terminar")
+               escreval("Digite quais canais vc assiste:")
+               leia(canal)
+               se (canal = 9) entao
+                  canal9 <- canal9 +1
+                  contador <- contador + 1
+               senao
+                    se (canal = 12) entao
+                       canal12 <- canal12 +1
+                       contador<- contador +1
+                    senao
+                         se (canal = 23) entao
+                            canal23 <- canal23 +1
+                            contador<- contador +1
+                         senao
+                              se (canal = 40) entao
+                                 canal40 <- canal40 +1
+                                 contador<- contador +1
+                              senao
+                                   outros <- outros +1
+                                   contador<- contador +1
+                              fimse
+                         fimse
+                    fimse
+               fimse
+      fimenquanto
+      canal9 <- (canal9/contador) *100
+      canal12 <- (canal12/contador) *100
+      canal23 <- (canal23/contador) *100
+      canal40 <- (canal40/contador) *100
+      outros <- (outros/contador) *100
+      
+      escreval("A porcentagem de audiencia da emissora 9  :", canal9)
+      escreval("A porcentagem de audiencia da emissora 12  :", canal12)
+      escreval("A porcentagem de audiencia da emissora 23  :", canal23)
+      escreval("A porcentagem de audiencia da emissora 40  :", canal40)
+      escreval("A porcentagem de audiencia de outras emissoras  :", outros)
+
+
+fimalgoritmo
